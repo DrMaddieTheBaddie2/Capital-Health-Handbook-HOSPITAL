@@ -8,6 +8,7 @@
   --nav-shadow-color: rgba(15, 56, 126, 0.12);
   --shadow: 0 10px 26px var(--shadow-color);
   --radius: 18px;
+  --quick-card-min-height: 106px;
   --desktop-bottom-spacing: 100px;
 }
 
@@ -94,18 +95,22 @@ body {
 }
 
 .quick-card {
+  border: 0;
+  text-align: left;
+  color: var(--text);
   background: var(--card);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  min-height: 106px;
+  min-height: var(--quick-card-min-height);
   padding: 14px;
   display: flex;
   align-items: flex-end;
+  cursor: pointer;
 }
 
-.quick-card h3 {
-  margin: 0;
-  font-size: 0.98rem;
+.quick-card:focus-visible {
+  outline: 3px solid rgba(15, 99, 216, 0.35);
+  outline-offset: 2px;
 }
 
 .bottom-nav {

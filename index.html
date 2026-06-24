@@ -16,7 +16,14 @@
       <main class="app-main">
         <section class="search-section" aria-label="Search">
           <label class="search-label" for="search">Search</label>
-          <input id="search" type="search" autocomplete="off" placeholder="Search protocols, contacts, departments..." />
+          <input
+            id="search"
+            type="search"
+            autocomplete="off"
+            aria-describedby="search-help"
+            placeholder="Search protocols, contacts, departments..."
+          />
+          <p id="search-help" class="search-label">Search protocols, contacts, and department resources.</p>
           <p id="search-status" class="search-label" aria-live="polite" aria-atomic="true"></p>
         </section>
 
@@ -25,15 +32,9 @@
             <h2>Quick Access</h2>
           </div>
           <div class="card-grid">
-            <article class="quick-card">
-              <h3>Emergency</h3>
-            </article>
-            <article class="quick-card">
-              <h3>Department Contacts</h3>
-            </article>
-            <article class="quick-card">
-              <h3>Patient Intake</h3>
-            </article>
+            <button type="button" class="quick-card">Emergency</button>
+            <button type="button" class="quick-card">Department Contacts</button>
+            <button type="button" class="quick-card">Patient Intake</button>
           </div>
         </section>
       </main>
