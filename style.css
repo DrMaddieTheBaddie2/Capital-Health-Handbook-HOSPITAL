@@ -4,7 +4,9 @@
   --card: #ffffff;
   --text: #102542;
   --muted: #5f718f;
-  --shadow: 0 10px 26px rgba(14, 44, 94, 0.1);
+  --shadow-color: rgba(14, 44, 94, 0.1);
+  --nav-shadow-color: rgba(15, 56, 126, 0.12);
+  --shadow: 0 10px 26px var(--shadow-color);
   --radius: 18px;
 }
 
@@ -117,7 +119,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
-  box-shadow: 0 -8px 24px rgba(15, 56, 126, 0.12);
+  box-shadow: 0 -8px 24px var(--nav-shadow-color);
 }
 
 .bottom-nav button {
