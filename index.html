@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHS Medical Handbook</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <h1>CHS Medical Handbook</h1>
+        <p>Capital Health Services</p>
+      </header>
+
+      <main class="app-main">
+        <section class="search-section" aria-label="Search">
+          <label class="visually-hidden" for="search">Search</label>
+          <input
+            id="search"
+            type="search"
+            autocomplete="off"
+            aria-describedby="search-help"
+            placeholder="Search protocols, contacts, departments..."
+          />
+          <p id="search-help" class="support-text">Press Enter to check search availability.</p>
+          <p id="search-status" class="support-text" aria-live="polite" aria-atomic="true"></p>
+        </section>
+
+        <section class="quick-access" aria-label="Quick access">
+          <div class="section-title-row">
+            <h2>Quick Access</h2>
+          </div>
+          <div class="card-grid">
+            <button type="button" class="quick-card">Emergency</button>
+            <button type="button" class="quick-card">Department Contacts</button>
+            <button type="button" class="quick-card">Patient Intake</button>
+          </div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Primary navigation">
+        <button type="button" aria-current="page">Home</button>
+        <button type="button">Handbook</button>
+        <button type="button">Tools</button>
+        <button type="button">Profile</button>
+      </nav>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
