@@ -88,7 +88,7 @@ body {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 12px;
 }
 
@@ -114,7 +114,7 @@ body {
   bottom: 0;
   margin: 0 auto;
   max-width: 760px;
-  background: rgba(255, 255, 255, 0.95);
+  background: #ffffff;
   backdrop-filter: blur(6px);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
