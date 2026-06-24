@@ -7,7 +7,7 @@ if (searchInput) {
       // Prevent default submit behavior until search interactions are implemented.
       event.preventDefault();
       if (searchStatus) {
-        searchStatus.textContent = "Search is not yet available.";
+        searchStatus.textContent = "Search request received.";
       }
     }
   });
