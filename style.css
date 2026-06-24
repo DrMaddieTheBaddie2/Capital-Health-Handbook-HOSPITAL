@@ -8,6 +8,7 @@
   --nav-shadow-color: rgba(15, 56, 126, 0.12);
   --shadow: 0 10px 26px var(--shadow-color);
   --radius: 18px;
+  --desktop-bottom-spacing: 100px;
 }
 
 * {
@@ -141,7 +142,7 @@ body {
 
 @media (min-width: 768px) {
   .app-shell {
-    padding: 16px 16px 100px;
+    padding: 16px 16px var(--desktop-bottom-spacing);
   }
 
   .app-header {
