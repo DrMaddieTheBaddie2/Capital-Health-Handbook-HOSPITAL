@@ -120,7 +120,7 @@ body {
   bottom: 0;
   margin: 0 auto;
   max-width: 760px;
-  background: #ffffff;
+  background: var(--card);
   backdrop-filter: blur(6px);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
