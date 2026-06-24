@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHS Medical Handbook</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <h1>CHS Medical Handbook</h1>
+        <p>Capital Health Services</p>
+      </header>
+
+      <main class="app-main">
+        <section class="search-section" aria-label="Search">
+          <label class="search-label" for="search">Search</label>
+          <input id="search" type="search" placeholder="Search protocols, contacts, departments..." />
+        </section>
+
+        <section class="quick-access" aria-label="Quick access">
+          <div class="section-title-row">
+            <h2>Quick Access</h2>
+          </div>
+          <div class="card-grid">
+            <article class="quick-card">
+              <h3>Emergency</h3>
+            </article>
+            <article class="quick-card">
+              <h3>Department Contacts</h3>
+            </article>
+            <article class="quick-card">
+              <h3>Patient Intake</h3>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Bottom navigation">
+        <a href="#" aria-current="page">Home</a>
+        <a href="#">Handbook</a>
+        <a href="#">Tools</a>
+        <a href="#">Profile</a>
+      </nav>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
