@@ -57,7 +57,7 @@ body {
   gap: 18px;
 }
 
-.search-label {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -66,6 +66,12 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.support-text {
+  margin: 8px 2px 0;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 .search-section input {
